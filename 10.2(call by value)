@@ -1,0 +1,12 @@
+#include<stdio.h>
+int func(int a,int b);
+int main(){
+    int x=9,y=5;
+    func(x,y);
+    printf("In main,x=%d y=%d\n",y,x);
+    return 0;
+}
+int func(int a,int b){
+    b += a;
+    printf("In func, a = %d b= %d\n",a,b);
+}
