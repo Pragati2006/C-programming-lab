@@ -1,0 +1,16 @@
+#include<stdio.h>
+void fibusingGoto(int N){
+int a=0,b=1,sum=0;
+lablefib:
+if(N!=0){
+    printf("%d\n",a);
+    sum=a+b;
+    a=b;
+    b=sum;
+    N--;
+    goto lablefib;
+    }}
+    void main(){
+        int N=7;
+        fibusingGoto(N);
+    }
